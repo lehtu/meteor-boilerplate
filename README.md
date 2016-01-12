@@ -25,3 +25,6 @@ This repository has exactly same code, but in better structure.
 	/main.html
 
 Have a happy meteoring! :)
+
+## NOTE!
+Believe me, only thing changed there is structure, so remember to remove autopublish and insecure packages by yourself.
