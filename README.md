@@ -27,4 +27,4 @@ This repository has exactly same code, but in better structure.
 Have a happy meteoring! :)
 
 ## NOTE!
-Believe me, only thing changed there is structure, so remember to remove autopublish and insecure packages by yourself.
+Believe me, only thing changed here is structure, so remember to remove autopublish and insecure packages by yourself.
