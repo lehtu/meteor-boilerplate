@@ -2,7 +2,12 @@
     <header><h1>Welcome to ITala</h1></header>
     <main>
         <hr />
-        {{>Template.dynamic template=content}}
+        {{#if currentUser}}
+            {{> dashboard}}
+        {{else}}
+            {{> register}}
+            {{> login}}
+        {{/if}}
         <hr />
     </main>
     <footer>We link you with multiple job opportunities</footer>
