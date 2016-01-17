@@ -7,8 +7,11 @@ Template.register.events({
             email: emailVar,
             password: passwordVar
         }, function(error) {
-            if (error)
+            if (error) {
                 console.log(error);
+            } else {
+                console.log("registration completed succesfully");
+            }
         });
         Meteor.loginWithPassword(emailVar, passwordVar);
     }
