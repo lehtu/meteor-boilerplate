@@ -11,8 +11,15 @@ Template.signup.events({
                 console.log(error);
             } else {
                 console.log("signup completed succesfully");
+                Meteor.loginWithPassword(emailVar, passwordVar, function(error){
+                    if (error) {
+                        console.log(error);
+                    } else {
+                        console.log("succesfully logged in!");
+                        FlowRouter.go('home');
+                    }
+                });
             }
         });
-        Meteor.loginWithPassword(emailVar, passwordVar);
     }
 });

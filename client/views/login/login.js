@@ -8,6 +8,7 @@ Template.login.events({
                 console.log(error);
             } else {
                 console.log("succesfully logged in!");
+                FlowRouter.go('home');
             }
         });
     }
