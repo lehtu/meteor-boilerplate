@@ -12,3 +12,4 @@ This is going to be The Boilerplate you want to use when you are starting new me
   * [accounts-password](https://atmospherejs.com/meteor/accounts-password)
 * Client:
   * [twbs:bootstrap](https://github.com/twbs/bootstrap)
+  * [fourseven:scss](https://github.com/fourseven/meteor-scss)
