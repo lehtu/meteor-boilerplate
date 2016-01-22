@@ -1,4 +1,4 @@
-Template.register.events({
+Template.signup.events({
     'submit form': function(event) {
         event.preventDefault();
         var emailVar = event.target.registerEmail.value;
@@ -10,7 +10,7 @@ Template.register.events({
             if (error) {
                 console.log(error);
             } else {
-                console.log("registration completed succesfully");
+                console.log("signup completed succesfully");
             }
         });
         Meteor.loginWithPassword(emailVar, passwordVar);
