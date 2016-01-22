@@ -2,12 +2,7 @@
     {{> header}}
     <div class="container">
         <hr />
-        {{#if currentUser}}
-            {{> dashboard}}
-        {{else}}
-            {{> signup}}
-            {{> login}}
-        {{/if}}
+        {{> Template.dynamic template=main}}
         <hr />
     </div>
 </template>
