@@ -1,6 +1,6 @@
 <template name="defaultLayout">
-    <header><h1>Welcome to [Application Name]</h1></header>
-    <main>
+    {{> header}}
+    <div class="container">
         <hr />
         {{#if currentUser}}
             {{> dashboard}}
@@ -9,6 +9,5 @@
             {{> login}}
         {{/if}}
         <hr />
-    </main>
-    <footer>We link you with multiple job opportunities</footer>
+    </div>
 </template>
