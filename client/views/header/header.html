@@ -11,7 +11,11 @@
                 <a class="navbar-brand" href="">[Application Name]</a>
             </div>
             <div id="navbar-collapse" class="collapse navbar-collapse">
-
+                {{#if currentUser}}
+                    {{> authenticatedNavigation}}
+                {{else}}
+                    {{> publicNavigation}}
+                {{/if}}
             </div>
         </div>
     </nav>
