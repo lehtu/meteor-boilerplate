@@ -21,3 +21,4 @@ kadira:flow-router
 kadira:blaze-layout
 accounts-password
 twbs:bootstrap
+arillo:flow-router-helpers
