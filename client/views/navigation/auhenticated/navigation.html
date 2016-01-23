@@ -1,7 +1,7 @@
 <template name="authenticatedNavigation">
+    {{> bothNavigation}}
     <ul class="nav navbar-nav">
-        <li class=""><a href="">Home</a></li>
-        <li class=""><a href="">Info</a></li>
+        <li class=""><a href="{{pathFor 'secret'}}">[Top secret]</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
