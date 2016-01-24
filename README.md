@@ -21,3 +21,15 @@ Many people often forgot to give settings file when running meteor, so here is n
     npm start
 
 :warning: running through npm has some [performance issues](https://github.com/meteor/meteor/issues/4314) right now :warning:
+
+## Influenced by
+* structure
+  * http://learncooltech.com/how-to-launch-meteor-app-on-production/
+* original idea for Boilerplate
+  * https://github.com/Differential/meteor-boilerplate
+* many good ideas and packages
+  * https://themeteorchef.com/base/
+* good practices and packages
+  * http://guide.meteor.com/
+* Kadiras own guide to use their flow-router
+  * https://kadira.io/academy/meteor-routing-guide
