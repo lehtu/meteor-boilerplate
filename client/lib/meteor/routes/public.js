@@ -18,9 +18,3 @@ FlowRouter.route('/signup', {
         BlazeLayout.render('defaultLayout', {main: 'signup'});
     }
 });
-
-FlowRouter.notFound = {
-    action: function() {
-        BlazeLayout.render('defaultLayout', {main: 'notFound'});
-    }
-};
