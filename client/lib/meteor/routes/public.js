@@ -1,20 +1,24 @@
-FlowRouter.route('/', {
-    name: 'home',
+var publicRoutes = FlowRouter.group({
+    name: 'public'
+});
+
+publicRoutes.route('/signup', {
+    name: 'signup',
     action: function() {
-        BlazeLayout.render('defaultLayout', {main: 'home'});
+        BlazeLayout.render('defaultLayout', {main: 'signup'});
     }
 });
 
-FlowRouter.route('/login', {
+publicRoutes.route('/login', {
     name: 'login',
     action: function() {
         BlazeLayout.render('defaultLayout', {main: 'login'});
     }
 });
 
-FlowRouter.route('/signup', {
-    name: 'signup',
+publicRoutes.route('/', {
+    name: 'home',
     action: function() {
-        BlazeLayout.render('defaultLayout', {main: 'signup'});
+        BlazeLayout.render('defaultLayout', {main: 'home'});
     }
 });
