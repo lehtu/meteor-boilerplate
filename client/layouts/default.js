@@ -21,8 +21,7 @@ Template.defaultLayout.helpers({
     },
     redirectPublic: function() {
         return handleRedirect([
-            'index',
-            'dashboard'
+            'author'
         ], '/login' );
     }
 });
