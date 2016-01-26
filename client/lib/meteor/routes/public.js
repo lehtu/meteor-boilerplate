@@ -16,6 +16,13 @@ publicRoutes.route('/login', {
     }
 });
 
+publicRoutes.route('/news', {
+    name: 'news',
+    action: function() {
+        BlazeLayout.render('defaultLayout', {main: 'news'});
+    }
+});
+
 publicRoutes.route('/', {
     name: 'home',
     action: function() {
