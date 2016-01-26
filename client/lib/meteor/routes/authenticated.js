@@ -1,18 +1,10 @@
 var authenticatedRoutes = FlowRouter.group({
-    name: 'authenticated',
-    prefix: "/admin"
+    name: 'authenticated'
 });
 
-authenticatedRoutes.route('/', {
-    name: 'index',
+authenticatedRoutes.route('/author', {
+    name: 'author',
     action: function() {
-        BlazeLayout.render('defaultLayout', {main: 'index'});
-    }
-});
-
-authenticatedRoutes.route('/dashboard', {
-    name: 'dashboard',
-    action: function() {
-        BlazeLayout.render('defaultLayout', { main: 'dashboard'});
+        BlazeLayout.render('defaultLayout', { main: 'author'});
     }
 });
