@@ -2,7 +2,19 @@
     {{> header}}
     <div class="container">
         <hr />
-        {{> Template.dynamic template=main}}
+        {{#if loggingIn}}
+            {{> loading}}
+		{{else}}
+			{{#if authenticated}}
+				{{#unless redirectAuthenticated}}
+					{{> Template.dynamic template=main}}
+				{{/unless}}
+			{{else}}
+				{{#unless redirectPublic}}
+					{{> Template.dynamic template=main}}
+				{{/unless}}
+			{{/if}}
+		{{/if}}
         <hr />
     </div>
 </template>
